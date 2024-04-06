@@ -1,10 +1,30 @@
 doctype html
-html(lang='en')
-  head
-    meta(charset='UTF-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1.0')
-    link(rel='stylesheet' href='css/styles.css')
-    title Book shop
-  body
-    .first_block 1
-    .second_block 2
+meta(charset='UTF-8')
+link(rel='stylesheet' href='css/styles.css')
+title Bookshop
+.wrapper
+    .header
+        .header__container
+            .header__logo
+                h2 Bookshop
+            nav.header__menu.menu
+                ul.menu__list
+                    li.menu__item
+                        a.menu__link(href='') books
+                    li.menu__item
+                        a.menu__link(href='') audiobooks
+                    li.menu__item
+                        a.menu__link(href='') Stationery & gifts
+                    li.menu__item
+                        a.menu__link(href='') blog
+            .header__options.options
+                .options__user
+                    a.options__link(href='')
+                        img.user(src='../src/images/icons/user.svg' alt='')
+                .options__search
+                    .options__link
+                        img.search(src='../src/images/icons/search.svg' alt='')
+                .options__bag
+                    .options__link
+                        img.bag(src='../src/images/icons/shopbag.svg' alt='')
+                        img.bagellipse(src='../src/images/icons/bagellipse.svg' alt='')
